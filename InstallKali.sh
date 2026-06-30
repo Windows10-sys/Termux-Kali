@@ -30,7 +30,7 @@ if [ "$skip" != 1 ]; then
 			echo; echo -e "\e[91mDetected unsupported CPU architecture!"; echo; exit 1 ;;
 		esac
 		echo -e "\e[32m[*] \e[34mDownloading RootFS (~70Mb) for ${archurl}..."
-		wget "https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Rootfs/Kali/${archurl}/kali-rootfs-${archurl}.tar.xz" -O $tarball -q
+		wget "https://kali.download/nethunter-images/kali-2026.2/rootfs/kali-nethunter-rootfs-minimal-arm64.tar.xzhttps://kali.download/nethunter-images/kali-2026.2/rootfs/kali-nethunter-rootfs-minimal-${archurl}.tar.xz" -O $tarball -q
 	fi
 	cur=$(pwd)
 	mkdir -p "$folder"
